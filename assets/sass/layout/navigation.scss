@@ -1,0 +1,32 @@
+nav {
+    background-color: springgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 900;
+        /*text-transform: uppercase; es para poner los textos en mayúscula*/
+    }
+    li {
+        display: inline-block;
+        padding-right: 0.5rem;
+        text-decoration: none;
+        &:last-child {
+            padding-right: 0;
+        }
+        a {
+            text-decoration: none;
+            font-size: 0.75rem;
+            color: #333;
+            &:hover {
+                color: #999;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+
