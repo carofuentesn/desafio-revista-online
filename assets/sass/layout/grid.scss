@@ -3,7 +3,6 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: lightskyblue;
 }
 
 .row {
@@ -67,7 +66,6 @@
 @media (min-width: 576px) {
   .contenedor {
     width: 540px;
-    background-color: orange;
   }
 
   .d-sm-none {
@@ -120,7 +118,6 @@
 @media (min-width: 768px) {
   .contenedor {
     width: 750px;
-    background-color: mediumblue;
   }
 
   .d-md-none {
@@ -172,7 +169,6 @@
 @media (min-width: 992px) {
   .contenedor {
     width: 970px;
-    background-color: green;
   }
   
   .d-lg-none {
@@ -225,7 +221,7 @@
 @media (min-width: 1200px) {
   .contenedor {
     width: 1170px;
-    background-color: pink;
+
   }
 
   .d-xl-none {

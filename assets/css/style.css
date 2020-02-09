@@ -14,38 +14,67 @@ body {
   font-size: 1rem;
 }
 
+h1 {
+  font-size: 1.3rem;
+  color: #000;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 0.9rem;
+  color: #000;
+  font-weight: 400;
+}
+
+p {
+  font-size: 0.75rem;
+  color: #000;
+  font-weight: 300;
+}
+
 nav {
-  background-color: springgreen;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3rem;
+  padding: 0 1.5rem;
 }
 nav h3 {
   font-size: 1.5rem;
   font-weight: 900;
   /*text-transform: uppercase; es para poner los textos en mayúscula*/
 }
-nav li {
+nav ul {
+  padding: 0;
+}
+nav ul li {
   display: inline-block;
   padding-right: 0.5rem;
   text-decoration: none;
 }
-nav li:last-child {
+nav ul li:last-child {
   padding-right: 0;
 }
-nav li a {
+nav ul li a {
   text-decoration: none;
   font-size: 0.75rem;
   color: #333;
 }
-nav li a:hover {
+nav ul li a:hover {
   color: #999;
   text-decoration: underline;
 }
+nav ul li a .nav__menu-nosotros {
+  display: none;
+}
 
 main {
-  background-color: skyblue;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -69,6 +98,12 @@ main {
   background-size: cover;
   width: 100%;
   height: 150px;
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.noticia .noticia__img:hover {
+  opacity: 0.5;
 }
 
 @media (min-width: 768px) {
@@ -82,23 +117,11 @@ main {
     height: 300px;
   }
 }
-/*
-@media (min-width: 768px){
-    .noticia {
-        width: 30%;
-        max-width: 300px; /*por ej. para logos para que tengan un máximo de ancho y no se achiquen tanto
-    }
-    .noticia__img {
-         width:100%;
-         height: 300px;
-    }
-}*/
 .contenedor {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: lightskyblue;
 }
 
 .row {
@@ -170,7 +193,6 @@ main {
 @media (min-width: 576px) {
   .contenedor {
     width: 540px;
-    background-color: orange;
   }
 
   .d-sm-none {
@@ -233,7 +255,6 @@ main {
 @media (min-width: 768px) {
   .contenedor {
     width: 750px;
-    background-color: mediumblue;
   }
 
   .d-md-none {
@@ -296,7 +317,6 @@ main {
 @media (min-width: 992px) {
   .contenedor {
     width: 970px;
-    background-color: green;
   }
 
   .d-lg-none {
@@ -359,7 +379,6 @@ main {
 @media (min-width: 1200px) {
   .contenedor {
     width: 1170px;
-    background-color: pink;
   }
 
   .d-xl-none {
@@ -419,11 +438,70 @@ main {
   }
 }
 footer {
-  background-color: black;
+  background-color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.75rem;
+  color: #333;
 }
 
 aside {
-  background-color: mediumvioletred;
+  background-color: #eaf1f9;
+  padding: 0 1.5rem;
+}
+aside .aside__tags ul {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0 !important;
+}
+aside .aside__tags ul li {
+  list-style: none;
+  background-color: #327dc0;
+  color: #fff;
+  padding: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+aside .aside__destacados img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.newsletter {
+  text-align: center;
+  padding: 2rem;
+  background-color: #E1E4E6;
+}
+
+.newsletter__boton input {
+  border: none;
+  width: 18%;
+  height: 25px;
+}
+.newsletter__boton button {
+  border: none;
+  height: 25px;
+  background-color: #327dc0;
+  color: #fff;
+}
+.newsletter__boton button:hover {
+  background-color: #285375;
+}
+
+.nav__menu-input {
+  width: 90px !important;
+}
+.nav__menu-input input {
+  border-radius: 30px;
+  background-color: #eaf1f9;
+  width: 90px;
+}
+
+@media (min-width: 768px) {
+  .nav__menu-input {
+    width: 60%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

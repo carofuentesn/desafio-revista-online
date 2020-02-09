@@ -1,3 +1,28 @@
 aside {
-    background-color: mediumvioletred;
+    background-color: $fondo-principal;
+    padding: 0 1.5rem;    
+
+    .aside__tags {
+        ul {
+            display: flex;
+            justify-content: space-around;
+            padding-left: 0!important;
+            li {
+                list-style: none;
+                background-color: $fondo-secundario;
+                color: #fff;
+                padding: 0.25rem;
+                //tipografia
+                font-size: 0.75rem;
+                font-weight: 400;
+            }
+        }      
+    }
+    .aside__destacados {
+        img {
+            display:block;
+            margin:auto;
+            width: 100%;
+        }
+    }
 }

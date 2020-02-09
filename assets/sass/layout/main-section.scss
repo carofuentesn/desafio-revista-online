@@ -1,5 +1,4 @@
 main {
-    background-color: skyblue;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -22,6 +21,13 @@ main {
         background-size: cover;
         width: 100%;
         height: 150px;
+        //hover
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        &:hover {
+            opacity: 0.5;
+        }
     }
 }
 
@@ -38,14 +44,4 @@ main {
 }
 
 
-/*
-@media (min-width: 768px){
-    .noticia {
-        width: 30%;
-        max-width: 300px; /*por ej. para logos para que tengan un máximo de ancho y no se achiquen tanto
-    }
-    .noticia__img {
-         width:100%;
-         height: 300px;
-    }
-}*/
+
