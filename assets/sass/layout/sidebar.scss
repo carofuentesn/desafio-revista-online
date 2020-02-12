@@ -1,5 +1,4 @@
 aside {
-    background-color: $fondo-principal;
     padding: 0 1.5rem;    
 
     .aside__tags {
@@ -21,8 +20,6 @@ aside {
     .aside__destacados {
         margin-bottom: 50px;
         img {
-            display:block;
-            margin:auto;
             width: 100%;
         }
     }
